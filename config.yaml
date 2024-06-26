@@ -1,0 +1,11 @@
+credentials:
+  usernames:
+    taro:
+      name: Test Taro
+      password: taro
+    hanako:
+      name: Test Hanako
+      password: hanako
+cookie:
+  key: some_signature_key
+  name: some_cookie_name
