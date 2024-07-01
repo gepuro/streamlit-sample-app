@@ -1,4 +1,0 @@
-streamlit-nightly==1.35.1.dev20240617
-streamlit-authenticator
-openai
-requests

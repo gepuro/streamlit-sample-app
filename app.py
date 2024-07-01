@@ -42,20 +42,20 @@ def home():
         st.chat_message("assistant").write(msg)
 
 
-pages = {
-    "メイン": [
-        st.Page(
-            home,
-            title="Home",
-            icon="🏠",
-        ),
-        st.Page(
-            "pages/sample.py",
-            title="サンプル",
-            icon="🗒",
-        ),
-    ]
-}
+# pages = {
+#     "メイン": [
+#         st.Page(
+#             home,
+#             title="Home",
+#             icon="🏠",
+#         ),
+#         st.Page(
+#             "pages/sample.py",
+#             title="サンプル",
+#             icon="🗒",
+#         ),
+#     ]
+# }
 
 
 def not_logged_in():
@@ -79,8 +79,9 @@ authenticator.login()
 
 
 if st.session_state["authentication_status"]:
-    page = st.navigation(pages)
-    page.run()
+    # page = st.navigation(pages)
+    # page.run()
+    home()
     with st.sidebar:
         st.divider()
         authenticator.logout("Logout", "sidebar")
